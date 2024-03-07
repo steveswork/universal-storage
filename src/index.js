@@ -6,6 +6,8 @@ export {
     getServerStorage
 } from '@webkrafters/universal-storage';
 
+/** @typedef {import("@webkrafters/universal-storage/dist/client").ClientStorage} ClientStorage */
+/** @typedef {import("@webkrafters/universal-storage").Cookies} Cookies */
 /** @typedef {import("@webkrafters/universal-storage").Id} Id */
 /**
  * @typedef {import("@webkrafters/universal-storage").LocalStorageType<P>} LocalStorageType
@@ -18,4 +20,4 @@ export {
  * @template {Cookies} [CDATA=Cookies]
  */
 /** @typedef {import("@webkrafters/universal-storage").Response} Response */
-/** @typedef {import("@webkrafters/universal-storage").Cookies} Cookies */
+/** @typedef {import("@webkrafters/universal-storage/dist/server").ServerStorage} ServerStorage */
