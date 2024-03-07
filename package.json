@@ -38,7 +38,18 @@
     "dist/index.d.ts"
   ],
   "keywords": [
-    "universal storage"
+    "cookie",
+    "local storage",
+    "local-storage",
+    "localstorage",
+    "server storage",
+    "server-storage",
+    "serverstorage",
+    "storage",
+    "universal",
+    "universal storage",
+    "universal-storage",
+    "universalstorage"
   ],
   "license": "ISC",
   "main": "index.js",
