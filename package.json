@@ -7,7 +7,7 @@
     "steveswork <stephen.isienyi@gmail.com> (https://github.com/steveswork)"
   ],
   "dependencies": {
-    "@webkrafters/universal-storage": "0.0.99"
+    "@webkrafters/universal-storage": "0.0.991"
   },
   "description": "@webkrafters/universal-storage package dx friend wrapper",
   "devDependencies": {
@@ -73,5 +73,5 @@
     "test:watch": "eslint --fix && jest --updateSnapshot --watchAll"
   },
   "types": "dist/index.d.ts",
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
