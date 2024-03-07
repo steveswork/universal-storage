@@ -1,0 +1,66 @@
+{
+  "author": "Stephen Isienyi <stephen.isienyi@webkrafting.com>",
+  "bugs": {
+    "url": "https://github.com/webKrafters/universal-storage/issues"
+  },
+  "contributors": [
+    "steveswork <stephen.isienyi@gmail.com> (https://github.com/steveswork)"
+  ],
+  "dependencies": {
+    "@webkrafters/universal-storage": "0.0.98"
+  },
+  "description": "@webkrafters/universal-storage package dx friend wrapper",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest-cli": "^24.3.0",
+    "@types/js-cookie": "^3.0.6",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest-cli": "^26.6.3",
+    "js-cookie": "^3.0.5",
+    "typescript": "^4.8.2"
+  },
+  "files": [
+    "package.json",
+    "index.js",
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "keywords": [
+    "universal storage"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "universal-storage",
+  "peerDependencies": {
+    "js-cookie": "> 1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webKrafters/universal-storage.git"
+  },
+  "scripts": {
+    "build": "eslint --fix && rm -rf dist && babel src -d dist --ignore '**/*.test.js' && tsc",
+    "postbuild": "node ./post-builder",
+    "test": "eslint --fix && jest --coverage --updateSnapshot",
+    "test:clean": "jest --clearCache",
+    "test:core": "jest --updateSnapshot",
+    "test:watch": "eslint --fix && jest --updateSnapshot --watchAll"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.1"
+}
