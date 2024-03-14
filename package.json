@@ -1,7 +1,7 @@
 {
   "author": "Stephen Isienyi <stephen.isienyi@webkrafting.com>",
   "bugs": {
-    "url": "https://github.com/@webKrafters/universal-storage/issues"
+    "url": "https://github.com/webKrafters/universal-storage/issues"
   },
   "contributors": [
     "steveswork <stephen.isienyi@gmail.com> (https://github.com/steveswork)"
@@ -37,6 +37,7 @@
     "dist/index.js",
     "dist/index.d.ts"
   ],
+  "homepage": "https://github.com/webKrafters/universal-storage/readme",
   "keywords": [
     "cookie",
     "local storage",
@@ -62,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/@webkrafters/universal-storage.git"
+    "url": "git+https://github.com/webkrafters/universal-storage.git"
   },
   "scripts": {
     "build": "eslint --fix && rm -rf dist && babel src -d dist --ignore '**/*.test.js' && tsc",
@@ -73,5 +74,5 @@
     "test:watch": "eslint --fix && jest --updateSnapshot --watchAll"
   },
   "types": "dist/index.d.ts",
-  "version": "0.0.22"
+  "version": "0.0.23"
 }
